@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeFlow Web - Criação de Sites e Social Media</title>
+    
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon e Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    
+    <!-- Tema de Cor -->
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="#home">
+                            <img src="images/logo.png" alt="FreeFlow Web Logo" class="logo-img">
+                            <span class="logo-text">FreeFlow Web</span>
+                        </a>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">FreeFlow Web</h1>
+            <p class="hero-subtitle">Criatividade sem limites. Designs que fluem.</p>
+            <p class="hero-description">Especialista em criação de sites modernos e estratégias de social media que elevam sua marca</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Começar Projeto</a>
+                <a href="#projetos" class="btn btn-secondary">Ver Portfólio</a>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- PROJETOS / CARROSSEL -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos em Destaque</h2>
+                <p>Conheça alguns dos nossos trabalhos mais recentes</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel" id="carouselProjetos">
+                    <div class="carousel-item active">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/carousel/carrosel-criacao-site.jpg" alt="Criação de Site">
+                                <div class="project-overlay">
+                                    <span class="category">Web Design</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Criação de Site Profissional</h3>
+                                <p>Desenvolvimento completo de sites modernos, responsivos e otimizados para conversão. Desde o design até a implementação técnica com as melhores práticas de desenvolvimento web.</p>
+                                <div class="tech-tags">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/carousel/estrategia-digital.png" alt="Estratégia Digital">
+                                <div class="project-overlay">
+                                    <span class="category">Estratégia</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Estratégia Digital Integrada</h3>
+                                <p>Planejamento estratégico completo de presença digital. Análise profunda de mercado, posicionamento omnichannel e execução de estratégias que geram resultados reais e mensuráveis para seu negócio.</p>
+                                <div class="tech-tags">
+                                    <span>Análise</span>
+                                    <span>Planejamento</span>
+                                    <span>ROI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/carousel/marca-vegana.png" alt="Marca Vegana">
+                                <div class="project-overlay">
+                                    <span class="category">Branding</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Identidade de Marca Vegana</h3>
+                                <p>Criação completa de identidade visual para marcas conscientes. Desenvolvemos logos, paletas de cores e diretrizes de marca que comunicam valores sustentáveis e autênticos, conectando com seu público-alvo.</p>
+                                <div class="tech-tags">
+                                    <span>Logo Design</span>
+                                    <span>Brand Guidelines</span>
+                                    <span>Identidade Visual</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/carousel/social-media.png" alt="Social Media">
+                                <div class="project-overlay">
+                                    <span class="category">Social Media</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Gestão de Social Media</h3>
+                                <p>Estratégia completa para redes sociais com criação de conteúdo engajador, calendário editorial, análise de métricas e gestão de comunidade. Aumentamos alcance, engajamento e conversões nas principais plataformas.</p>
+                                <div class="tech-tags">
+                                    <span>Instagram</span>
+                                    <span>TikTok</span>
+                                    <span>Facebook</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas para sua presença digital</p>
+            </div>
+
+            <div class="servicos-grid">
+                <a href="pages/servico-criacao-sites.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Criação de Sites</h3>
+                    <p>Websites modernos, responsivos e otimizados para conversão. De landings pages a portfólios completos.</p>
+                </a>
+
+                <a href="pages/servico-social-media.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Social Media Design</h3>
+                    <p>Criação visual impactante para Instagram, TikTok e Facebook. Feed cohesivo e estratégico.</p>
+                </a>
+
+                <a href="pages/servico-branding.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Branding & Design</h3>
+                    <p>Identidade visual completa: logo, paleta de cores, tipografia e guidelines para sua marca.</p>
+                </a>
+
+                <a href="pages/servico-estrategia-digital.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Estratégia Digital</h3>
+                    <p>Planejamento estratégico de presença digital e social media para impulsionar seu negócio.</p>
+                </a>
+
+                <a href="pages/servico-desenvolvimento-web.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites com JavaScript interativo, animações fluidas e performance otimizada.</p>
+                </a>
+
+                <a href="pages/servico-design-responsivo.html" class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsivo</h3>
+                    <p>Projetos que se adaptam perfeitamente a todos os dispositivos e tamanhos de tela.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2>Sobre FreeFlow Web</h2>
+                    <p>Somos especialistas em transformar ideias em experiências digitais impactantes. Nossa abordagem une criatividade, técnica e estratégia para criar soluções que não apenas impressionam visualmente, mas também geram resultados reais.</p>
+                    <p>Acreditamos que um bom design é aquele que flui naturalmente, que comunica sem esforço e que conecta marcas com suas audiências de forma autêntica.</p>
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Projetos Completos</p>
+                        </div>
+                        <div class="stat">
+                            <h4>40+</h4>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                        <div class="stat">
+                            <h4>2+</h4>
+                            <p>Anos de Experiência</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="images/sobre-mim.png" alt="FreeFlow Web">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Pronto para transformar sua ideia em realidade?</p>
+            </div>
+
+            <div class="contato-content">
+                <form class="contato-form" id="contatoForm" action="https://formspree.io/f/mbddaagl" method="POST" novalidate>
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                        <span class="form-error" id="erroNome"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Seu Email" required>
+                        <span class="form-error" id="erroEmail"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+                        <span class="form-error" id="erroAssunto"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <span class="form-error" id="erroMensagem"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar Mensagem</button>
+                </form>
+
+                <div class="contato-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/5511978941991" target="_blank" class="info-link">
+                            (11) 97894-1991
+                        </a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <a href="mailto:freefloweb@gmail.com" class="info-link">
+                            freefloweb@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Localização</h4>
+                        <p class="info-text">São Paulo - Brasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/marcelo-henrique-soares-da-silva-44832a3a4/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/freeflow.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-btn" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5511978941991" target="_blank" class="social-btn" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FreeFlow Web. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> e muita criatividade.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Service Worker para PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('Service Worker registrado'))
+                    .catch(error => console.log('Service Worker erro:', error));
+            });
+        }
+    </script>
+</body>
+</html>

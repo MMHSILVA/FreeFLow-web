@@ -1,0 +1,39 @@
+{
+  "name": "freeflow-web",
+  "version": "1.0.0",
+  "description": "FreeFlow Web - Portfólio moderno focado em criação de sites e social media",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx browser-sync start --server --files '*.html, css/*, js/*'",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "npx cleancss -o style.min.css style.css",
+    "minify:js": "npx terser script.js -o script.min.js",
+    "serve": "npx http-server -p 8000 -o",
+    "test": "npx lighthouse https://seu-site.com --view"
+  },
+  "keywords": [
+    "portfolio",
+    "web design",
+    "social media",
+    "responsive",
+    "modern",
+    "creative"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "cleancss-cli": "^5.6.0",
+    "http-server": "^14.1.0",
+    "lighthouse": "^10.0.0",
+    "terser": "^5.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/freeflow-web.git"
+  },
+  "homepage": "https://seu-site.com",
+  "bugs": {
+    "url": "https://github.com/seu-usuario/freeflow-web/issues"
+  }
+}

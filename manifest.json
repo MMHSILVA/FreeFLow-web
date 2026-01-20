@@ -1,0 +1,82 @@
+{
+  "name": "FreeFlow Web",
+  "short_name": "FreeFlow",
+  "description": "FreeFlow Web - Criação de Sites e Social Media com Design Moderno",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://via.placeholder.com/540x720?text=FreeFlow+Web",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://via.placeholder.com/1280x720?text=FreeFlow+Web",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192?text=FF",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512?text=FF",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://via.placeholder.com/192x192?text=FF",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Projetos",
+      "short_name": "Projetos",
+      "description": "Veja nossos últimos projetos",
+      "url": "/#projetos",
+      "icons": [
+        {
+          "src": "https://via.placeholder.com/96x96?text=Projetos",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Entre em Contato",
+      "short_name": "Contato",
+      "description": "Entre em contato conosco",
+      "url": "/#contato",
+      "icons": [
+        {
+          "src": "https://via.placeholder.com/96x96?text=Contato",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/#contato",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "prefer_related_applications": false
+}
